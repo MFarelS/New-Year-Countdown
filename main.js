@@ -1,21 +1,16 @@
 const currentyear = new Date().getFullYear();
         const currentdate = new Date().getDate()
 
-        const audio = document.getElementById("audio");
         const days = document.getElementById("days");
         const hours = document.getElementById("hours");
         const minutes = document.getElementById("minutes");
         const seconds = document.getElementById("seconds");
         const countDown = document.getElementById("countdown");
         const currentYear = new Date().getFullYear();
-        const newYearTime = new Date(`January 01 ${currentYear + 1} 00:00:00`);
-        document.getElementById("year").innerHTML = currentYear + 1 + " | Sachin Lohar"
-        document.getElementById("currentyear").innerHTML = currentYear + 1
+        const newYearTime = new Date(`July 2 2022 00:00:00`);
+        document.getElementById("year").innerHTML = "2022 | MFarelS"
+        document.getElementById("currentyear").innerHTML = "2022"
 
-        function play() {
-            audio.play();
-            audio.loop = true;
-        }
 
         function updateCountDown() {
             const currentTime = new Date();
